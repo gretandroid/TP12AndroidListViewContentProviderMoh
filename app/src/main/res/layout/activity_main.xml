@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:text="First name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Last name"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextPersonFirstNameId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:hint="full fill with your first name"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextPersonLastNameId"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="22dp"
+        android:ems="10"
+        android:hint="full fill with your last name"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPersonFirstNameId"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/createButtonId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="onClickCreateButtonEvent"
+        android:text="CREATE"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPersonLastNameId"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonLastNameId" />
+
+    <Button
+        android:id="@+id/editButtonId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="onClickEditButtonEvent"
+        android:text="Edit"
+        app:layout_constraintEnd_toEndOf="@+id/createButtonId"
+        app:layout_constraintStart_toStartOf="@+id/createButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/createButtonId" />
+
+
+    <Button
+        android:id="@+id/deleteButtonId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="onClickDeleteButtonEvent"
+        android:text="DELETE"
+        app:layout_constraintEnd_toEndOf="@+id/editButtonId"
+        app:layout_constraintStart_toStartOf="@+id/editButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/editButtonId" />
+
+    <Button
+        android:id="@+id/showAllButtonId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="onClickShowAllButtonEvent"
+        android:text="SHOW ALL"
+        app:layout_constraintEnd_toEndOf="@+id/deleteButtonId"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/deleteButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/deleteButtonId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

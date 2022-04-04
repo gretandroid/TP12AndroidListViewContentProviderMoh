@@ -1,0 +1,18 @@
+= TP11 Android ListView
+
+=== branch one_button_save
+version avec un bouton.
+
+=== exo sur la branche master
+utiliser 3 bouton en partant de la version un bouton
+tel que le screen suivant: +
+ +
+MainActivity +
+image:img/Screenshot_20220402-124702.png[MainActivity,width=340,height=580]
+ +
+ +
+SecondActivity +
+image:img/Screenshot_20220402-130613.png[SecondActivity,width=340,height=580]
+ +
+ +
+image:img/diagram_intents.png[MainActivity,width=540,height=380]
